@@ -1,0 +1,61 @@
+body {
+	background-color: #0C152F;
+	color: #e8ecf8;
+}
+
+p, h1, h2, h3, h4, h5, li {
+	color: white;
+}
+
+a {
+	color: #57E1E6;
+}
+
+a:hover {
+	color: #F395F6;
+}
+
+.navbar {
+	background-image: linear-gradient(to right, #552B9D, #F395F6);
+	border: 3px solid #57E1E6;
+}
+
+.jumbotron {
+	background-image: linear-gradient(to right, #57E1E6, #F395F6);
+}
+
+.jumbotron h1,
+.jumbotron p {
+	color: #0C152F;
+}
+
+.feature {
+	border: 3px solid transparent;
+	border-image: linear-gradient(to bottom, #F395F6, #57E1E6);
+	border-image-slice: 1;
+	padding: 20px 25px;
+	margin-bottom: 16px;
+	height: calc(100% - 16px);
+}
+
+.feature h3 {
+	font-size: 1.2rem;
+}
+
+.feature p {
+	color: #c9d1ea;
+	margin-bottom: 0;
+}
+
+#brandicon {
+	border-radius: 22%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 12px;
+	width: 80px;
+}
+
+.editor-footer p,
+footer p {
+	color: #9aa6c8;
+}

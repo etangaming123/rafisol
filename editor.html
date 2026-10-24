@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="siteresources/icon.png">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Settings Editor - Rafisol</title>
+		<meta name="description" content="Edit your server's Rafisol settings, then export them and upload with /config import.">
+
+		<meta name="theme-color" content="#57E1E6">
+		<!-- Bootstrap -->
+		<link href="siteresources/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="siteresources/style.css" rel="stylesheet">
+		<link href="siteresources/editor.css" rel="stylesheet">
+	</head>
+	<body class="editor-page">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">Rafisol</a>
+			<a class="navbar-brand" href="https://github.com/etangaming123/rafisol">[view on GitHub]</a>
+		</nav>
+
+		<div id="editor">
+			<aside id="sidebar" aria-label="Editor controls">
+				<header class="sb-head">
+					<div class="d-flex align-items-center">
+						<img id="guild-icon" class="guild-icon d-none" alt="">
+						<div class="min-w-0">
+							<h1 class="h5 mb-0">Settings Editor</h1>
+							<div class="small muted text-truncate" id="guild-name">No server loaded</div>
+						</div>
+					</div>
+					<div class="btn-row mt-2">
+						<label class="btn btn-outline-light btn-sm mb-0" for="import-input">Import…</label>
+						<input type="file" id="import-input" accept="application/json,.json" class="d-none">
+						<button type="button" class="btn btn-success btn-sm" id="export-btn" disabled>Export .json</button>
+						<button type="button" class="btn btn-outline-danger btn-sm" id="reset-btn" disabled>Reset</button>
+					</div>
+					<div class="small mt-2 d-none" id="dirty-note"><span class="dot"></span> Unsaved changes - export and <code>/config import</code> when you're done.</div>
+				</header>
+
+				<nav class="sb-nav" id="section-nav" role="tablist" aria-label="Settings sections"></nav>
+			</aside>
+
+			<main id="main-col">
+				<div class="welcome d-none" id="restore-banner">
+					<span id="restore-text"></span>
+					<span class="btn-row">
+						<button type="button" class="btn btn-warning btn-sm" id="restore-btn">Restore</button>
+						<button type="button" class="btn btn-outline-light btn-sm" id="restore-dismiss">Dismiss</button>
+					</span>
+				</div>
+				<div id="drop-zone">
+					<div id="pane"></div>
+				</div>
+				<p class="status" id="status" role="status" aria-live="polite"></p>
+			</main>
+		</div>
+
+		<footer class="text-center mt-4 editor-footer">
+			<p>etan • etangaming123 • etangamingxyz</p>
+		</footer>
+
+		<script src="siteresources/defaults.js"></script>
+		<script src="siteresources/editor.js"></script>
+	</body>
+</html>

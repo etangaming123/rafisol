@@ -1,0 +1,14 @@
+config.json
+*.db
+*.db-wal
+*.db-shm
+*.key
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.DS_Store
+.vscode/
+*.code-workspace
+.claude 
+VIBECODER!!!!

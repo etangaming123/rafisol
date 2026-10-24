@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="siteresources/icon.png">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Rafisol</title>
+		<meta name="description" content="Rafisol - a multipurpose Discord server bot: moderation, logging, automod, honeypot, role menus and webhook posts.">
+
+		<meta name="theme-color" content="#F395F6">
+		<!-- Bootstrap -->
+		<link href="siteresources/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="siteresources/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="index.html">Rafisol</a>
+			<a class="navbar-brand" href="https://github.com/etangaming123/rafisol">[view on GitHub]</a>
+		</nav>
+
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4"><img id="brandicon" src="siteresources/icon.png" alt="">Rafisol</h1>
+				<p class="lead">A multipurpose server bot - moderation, logging, automod, role menus and more, all configured from one settings file.</p>
+				<a class="btn btn-dark" href="editor.html">Open the Settings Editor</a>
+				<a class="btn btn-outline-dark" href="https://github.com/etangaming123/rafisol#selfhosting">Selfhost it</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Moderation</h3>
+						<p>Ban, softban, kick, timeout, mute, warn, purge, lockdown and slowmode. Temporary actions, numbered cases, and warnings that escalate automatically.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Logging</h3>
+						<p>Message edits and deletes, voice activity, joins and leaves, and audit-log style server changes - who did what, posted through webhooks.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Automod + Honeypot</h3>
+						<p>Word, invite, link, mention, spam and caps filters, plus a "do not type here" channel that softbans hacked accounts before they spam everywhere.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Roles</h3>
+						<p>Button and dropdown role menus, self-assignable roles, booster custom roles, autoroles, role persist, and per-command permissions.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Join / Leave</h3>
+						<p>Welcome and goodbye messages with embeds and placeholders, plus an optional welcome DM.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="feature">
+						<h3>Webhook Posts</h3>
+						<p>Write your rules and info posts once, post them with a custom name and avatar, and edit them in place later.</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="h4 mt-4">Setting it up</h2>
+			<ol>
+				<li>Run <code>/config export</code> in your server.</li>
+				<li>Open the <a href="editor.html">Settings Editor</a> and import the file.</li>
+				<li>Change what you like, export, and upload it with <code>/config import</code>.</li>
+			</ol>
+		</div>
+
+		<footer class="text-center mt-4">
+			<p><a href="termsofservice.html">Terms of Service</a> • <a href="privacypolicy.html">Privacy Policy</a></p>
+			<p>etan • etangaming123 • etangamingxyz</p>
+		</footer>
+	</body>
+</html>
